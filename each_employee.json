@@ -1,0 +1,21 @@
+
+  {
+    "employee": {
+      "required" : ["department" , "location" ],
+      "properties" : {
+        "department": {
+          "type": "object",
+          "oneOf": [
+              { "IT" },
+              { "Sales" },
+              { "Marketing" }
+          "Location": {
+            "type": "object",
+            "oneOf": [
+                { "Singapore" },
+                { "Malaysia" },
+                { "Vietnam" }
+            }
+          }
+      }
+    }
